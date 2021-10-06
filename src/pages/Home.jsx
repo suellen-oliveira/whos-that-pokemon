@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import QuestionIcon from "../assets/icon-question.png";
 
 const Home = () => {
   return (
     <MainHome>
       <Content>
+        <Text>
+          Quem é esse <span className="text">pokémon</span>
+        </Text>
+        <Icon src={QuestionIcon} />
         <Button>Começar</Button>
       </Content>
     </MainHome>
@@ -18,7 +23,34 @@ const MainHome = styled.main`
   align-items: center;
 `;
 
-const Content = styled.section``;
+const Content = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 54px;
+`;
+
+const Text = styled.p`
+  font-size: 54px;
+  letter-spacing: 0.2em;
+  color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .text {
+    margin-top: 30px;
+    font-size: 80px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--blue-400);
+  }
+`;
+
+const Icon = styled.img`
+  width: 65px;
+  height: 87px;
+`;
 
 const Button = styled.button`
   background-color: var(--red);

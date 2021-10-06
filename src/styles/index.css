@@ -1,5 +1,5 @@
 :root {
-  --background: linear-gradient(180deg, #3e5ca2 0%, #143685 100%);
+  --background: linear-gradient(180deg, #3e5ca2 20%, #143685 100%);
   --yellow: #f7cc46;
   --red: #cd3529;
   --blue-400: #3e5ca2;
@@ -11,7 +11,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  background-image: var(--background);
+  background: var(--background);
   font-family: "Open Sans", sans-serif;
 }
 
