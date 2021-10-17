@@ -1,7 +1,10 @@
 import styled from "styled-components";
+import { useHistory } from 'react-router-dom'
 import QuestionIcon from "../assets/icon-question.png";
 
 const Home = () => {
+  const history = useHistory();
+
   return (
     <MainHome>
       <Content>
@@ -9,7 +12,7 @@ const Home = () => {
           Quem é esse <span className="text">pokémon</span>
         </Text>
         <Icon src={QuestionIcon} />
-        <Button>Começar</Button>
+        <Button onClick={() => history.push("/jogo")} >Começar</Button>
       </Content>
     </MainHome>
   );
