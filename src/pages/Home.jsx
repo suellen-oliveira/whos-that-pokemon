@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useHistory } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 import QuestionIcon from "../assets/icon-question.png";
 
 const Home = () => {
@@ -9,10 +9,10 @@ const Home = () => {
     <MainHome>
       <Content>
         <Text>
-          Quem é esse <span className="text">pokémon</span>
+          Quem é esse <span className="text">pokemon</span>
         </Text>
         <Icon src={QuestionIcon} />
-        <Button onClick={() => history.push("/jogo")} >Começar</Button>
+        <Button onClick={() => history.push("/jogo")}>Começar</Button>
       </Content>
     </MainHome>
   );
